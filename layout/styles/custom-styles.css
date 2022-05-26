@@ -1,0 +1,520 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+:focus {
+    outline: none
+}
+
+textarea {
+    resize: none
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    color: #666
+}
+
+h2 {
+    text-align: center;
+    font-family: italic;
+    font-weight: bold;
+    
+}
+
+
+.wrapper_post {
+    max-width: 500px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_post .image-holder {
+    width: 51%
+}
+
+.wrapper_post form {
+    width: 100%
+}
+
+
+
+#wizard {
+    min-height: 570px;
+    background: #fff;
+    margin-right: 60px;
+    padding: 107px 75px 65px;
+    margin-top: 20px;
+    background-color: rgba(240, 46, 46, 0.5);
+    margin-bottom: 20px
+}
+
+#wizard_signup_agent {
+    min-height: 200px;
+    background: #fff;
+    margin-left: 10px;
+    padding: 20px 75px 20px;
+    margin-top: 50px;
+    background-color: rgba(240, 46, 46, 0.5);
+    margin-bottom: 30px;
+}
+
+#wizard_signup_donor {
+    min-height: 200px;
+    background: #fff;
+    margin-left: 30px;
+    padding: 20px 75px 20px;
+    margin-top: 50px;
+    background-color: rgba(240, 46, 46, 0.5);
+    margin-bottom: 30px;
+}
+
+#wizard_login {
+    min-height: 200px;
+    background: #fff;
+    margin-left: 70px;
+    padding: 20px 75px 20px;
+    margin-top: 70px;
+    background-color: rgba(240, 46, 46, 0.5);
+    margin-bottom: 20px;
+}
+
+#wizard_contact {
+    min-height: 200px;
+    background: #fff;
+    margin-left: 70px;
+    padding: 20px 75px 20px;
+    margin-top: 20px;
+    background-color: rgba(240, 46, 46, 0.5);
+    margin-bottom: 40px;
+}
+
+.form-row {
+    margin-bottom: 24px
+}
+
+.form-row label {
+    margin-bottom: 8px;
+    display: block
+}
+
+.form-row.form-group {
+    display: flex
+}
+
+.form-row.form-group .form-holder {
+    width: 50%;
+    margin-right: 21px
+}
+
+.form-row.form-group .form-holder:last-child {
+    margin-right: 0
+}
+
+.form-holder {
+    position: relative
+}
+
+.form-holder i {
+    position: absolute;
+    top: 11px;
+    right: 19px;
+    font-size: 17px;
+    color: #999
+}
+
+.form-control {
+    height: 42px;
+    border: 1px solid #e6e6e6;
+    background: none;
+    width: 100%;
+    padding: 0 18px
+}
+
+.form-control:focus {
+    border-color: #f3d4b7
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999;
+    font-size: 13px
+}
+
+.form-control::-moz-placeholder {
+    color: #999;
+    font-size: 13px
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999;
+    font-size: 13px
+}
+
+.form-control:-moz-placeholder {
+    color: #999;
+    font-size: 13px
+}
+
+textarea.form-control {
+    padding-top: 11px;
+    padding-bottom: 11px
+}
+
+@media (max-width: 1500px) {
+    .wrapper_post {
+        height: auto
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrapper_post {
+        height: 100vh
+    }
+
+    #wizard {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+
+      #wizard_login {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+    #wizard_contact {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+    #wizard_signup_agent {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+    #wizard_signup_donor {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+}
+
+@media (max-width: 991px) {
+    .wrapper_post {
+        justify-content: center
+    }
+
+    .wrapper_post .image-holder {
+        display: none
+    }
+
+    .wrapper_post form {
+        width: 60%
+    }
+
+    #wizard {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+     #wizard_login {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+    #wizard_contact {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+    #wizard_signup_agent {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+    #wizard_signup_donor {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper_post {
+        height: auto;
+        display: block
+    }
+
+    .wrapper_post .image-holder {
+        width: 100%;
+        display: block
+    }
+
+    .wrapper_post form {
+        width: 100%
+    }
+
+    #wizard {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+
+    #wizard_login {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+    #wizard_contact {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+    #wizard_signup_agent {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+    #wizard_signup_donor {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+
+
+    .form-row.form-group {
+        display: block
+    }
+
+    .form-row.form-group .form-holder {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px
+    }
+
+}
+
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+.form-control {
+    border-color: #ebebeb;
+    border-radius: 2px;
+    color: #8b95a5;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: inherit;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear
+}
+
+.btn-primary {
+    background-color: #33cabb;
+    border-color: #33cabb;
+    font-size: 20px;
+    color: #fff
+}
+
+.btn-bold {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px
+}
+
+.btn-primary:hover {
+    background-color: #52d3c7;
+    border-color: #52d3c7;
+    color: #fff
+}
+
+.btn:hover {
+    cursor: pointer
+}
+
+.form-control:focus {
+    border-color: #6545eb;
+    color: #4d5259;
+    -webkit-box-shadow: 0 0 0 0.1rem rgba(51, 202, 187, 0);
+    box-shadow: 0 0 0 0.1rem rgba(101, 69, 235, 0)
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100
+    }
+
+    100% {
+        stroke-dashoffset: 900
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100
+    }
+
+    100% {
+        stroke-dashoffset: 900
+    }
+}
+.upload{
+background-color:red;
+border:1px solid red;
+color:#fff;
+border-radius:5px;
+padding:10px;
+text-shadow:1px 1px 0 green;
+box-shadow:2px 2px 15px rgba(0,0,0,.75)
+}
+.upload:hover{
+cursor:pointer;
+background:#c20b0b;
+border:1px solid #c20b0b;
+box-shadow:0 0 5px rgba(0,0,0,.75)
+}
+#file{
+color:green;
+padding:5px;
+border:1px dashed #123456;
+background-color:#f9ffe5
+}
+#upload{
+margin-left:45px
+}
+#noerror{
+color:green;
+text-align:left
+}
+#error{
+color:red;
+text-align:left
+}
+/*login page css*/
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.terms_checkbox{
+    display: inline-block;
+}
+.modal a.close-modal{
+    visibility: hidden;
+}
+.gallery-img{
+    width: 100%;
+    height: 220px;
+    border-radius: 9%;
+    border: 3px solid;
+}
+.org-name{
+    font-size: 135%;
+    font-weight: 600;
+    padding-left: 26%;
+    font-family: inherit;
+    padding-top: 5%;
+}
+.cnct-head{
+    text-align: left;
+}
+.cnct-para{
+    font-size: 105%;
+}
